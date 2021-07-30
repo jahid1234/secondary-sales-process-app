@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/record_row"
+            android:weightSum="10"
+            >
+
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox_confirm"
+                android:layout_column="0"
+                android:padding="10sp"
+                android:gravity="left"
+                android:backgroundTint="@color/yellow"
+                android:buttonTint="@color/green"
+                android:layout_span="1"
+                >
+            </CheckBox>
+
+            <TextView
+                android:text="Sku"
+                android:id="@+id/initial_product_name"
+                android:textColor="@android:color/black"
+                android:layout_column="1"
+                android:padding="10sp"
+                android:gravity="left"
+                android:layout_span="6"
+                >
+            </TextView>
+
+            <EditText
+
+                android:id="@+id/carton_amount"
+                android:textColor="@android:color/black"
+                android:layout_column="2"
+                android:padding="10sp"
+                android:gravity="start"
+                android:layout_span="1"
+                android:inputType="number"
+                android:backgroundTint="@color/green"
+                >
+            </EditText>
+
+
+            <EditText
+
+                android:id="@+id/pice_amount"
+                android:textColor="@android:color/black"
+                android:layout_column="3"
+                android:padding="10sp"
+                android:gravity="start"
+                android:layout_span="1"
+                android:inputType="number"
+                android:backgroundTint="@color/green"
+                >
+            </EditText>
+
+            <TextView
+                android:text="total"
+                android:id="@+id/total_number_of_product"
+                android:textColor="@android:color/black"
+                android:layout_column="4"
+                android:padding="10sp"
+                android:gravity="left"
+                android:layout_span="1"
+                android:textSize="25sp"
+                >
+            </TextView>
+        </TableRow>
+
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        android:layout_margin="1dp"/>
+
+</LinearLayout>

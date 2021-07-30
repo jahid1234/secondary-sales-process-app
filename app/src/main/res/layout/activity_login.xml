@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.root.kfilsecondarysales.Activity.LoginActivity">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_varticle1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="0dp">
+
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/kazi_farm_logo"
+            android:textColor="@color/colorAccent"
+
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            >
+
+            <EditText
+                android:id="@+id/employee_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/userlogo"
+                android:hint="Employee Id"
+                android:drawablePadding="10dp"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:ems="10"
+                android:singleLine="true"
+                android:nextFocusDown="@id/password_editText"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:id="@+id/password_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/password_logo"
+                android:hint="password"
+                style="@style/Button"
+                android:drawablePadding="10dp"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:ems="10"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/remember_checkbox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:text="Remember me"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:shadowColor="@android:color/black"-->
+            <!--/>-->
+
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_button"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

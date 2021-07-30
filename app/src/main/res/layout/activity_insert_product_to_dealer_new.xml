@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:weightSum="100"
+    android:orientation="vertical"
+    >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            >
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:background="#119898"
+                android:layout_height="?attr/actionBarSize">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".7"
+                        android:layout_gravity="clip_horizontal"
+                        android:layout_marginTop="2dp"
+                        android:text="Issue Products To Dealer"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:weightSum="1"
+
+            >
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Dealer Code"
+                android:textSize="15sp"
+                android:layout_marginBottom="25dp"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:backgroundTint="#E91D24"
+                />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/spinner"
+                >
+
+                <Spinner
+                    android:id="@+id/dealer_list_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:entries="@array/product_name_arrays"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="5dp"
+
+                    >
+
+                </Spinner>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:weightSum="1"
+
+            >
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Brand Name"
+                android:textSize="15sp"
+                android:layout_marginBottom="25dp"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:backgroundTint="#E91D24"
+                />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/spinner"
+                >
+
+                <Spinner
+                    android:id="@+id/brand_list_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:entries="@array/product_name_arrays"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="5dp"
+
+                    >
+
+                </Spinner>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:stretchColumns="1"
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    >
+
+                    <TextView
+                        android:text="Chk"
+                        android:id="@+id/no"
+                        android:layout_column="0"
+                        android:padding="10sp"
+                        android:gravity="left"
+                        android:textColor="@color/green"
+
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:text="Sku"
+                        android:id="@+id/product_name_aso"
+                        android:layout_column="1"
+                        android:padding="10sp"
+                        android:gravity="left"
+                        android:textColor="@color/green"
+                        android:layout_marginLeft="10dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:text="Ctn"
+                        android:id="@+id/ctn_no"
+                        android:layout_column="2"
+                        android:padding="10sp"
+                        android:gravity="left"
+                        android:textColor="@color/green"
+                        android:layout_marginRight="0dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:text="Pice"
+                        android:id="@+id/pice_number"
+                        android:layout_column="3"
+                        android:padding="10sp"
+                        android:gravity="left"
+                        android:textColor="@color/green"
+                        android:layout_marginRight="10dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:text="Total"
+                        android:id="@+id/date"
+                        android:layout_column="4"
+                        android:padding="10sp"
+                        android:gravity="left"
+                        android:textColor="@color/green"
+
+                        >
+                    </TextView>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="44"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/data_table_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="9">
+
+            <Button
+                android:id="@+id/confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="Confirm"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+</LinearLayout>

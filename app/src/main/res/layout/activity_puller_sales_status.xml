@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.root.kfilsecondarysales.Activity.InsertProductToDealer">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="#119898"
+            android:layout_height="?attr/actionBarSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"
+                    android:layout_gravity="clip_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:text="Puller Sales Status"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp"/>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Target Outlet Number"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/target_outlet_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Visited Outlet number"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/visited_outlet_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Strike Rate"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/strike_rate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="LPC"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/lpc_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Total Sale"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/total_sale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:text="Taka"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Total Cash Collection"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/collected_cash_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:text="Taka"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

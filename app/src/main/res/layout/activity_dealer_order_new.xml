@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:background="#119898"
+                android:layout_height="?attr/actionBarSize">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".7"
+                        android:layout_gravity="clip_horizontal"
+                        android:layout_marginTop="2dp"
+                        android:text="Product Order"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:weightSum="1"
+
+            >
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Dealer Code"
+                android:textSize="15sp"
+                android:layout_marginBottom="25dp"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:backgroundTint="#E91D24"
+                />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/spinner"
+                >
+
+                <Spinner
+                    android:id="@+id/dealer_list_spinner_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:entries="@array/product_name_arrays"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="5dp"
+
+                    >
+
+                </Spinner>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:weightSum="1"
+
+            >
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:text="Brand Name"
+                android:textSize="15sp"
+                android:layout_marginBottom="25dp"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:backgroundTint="#E91D24"
+                />
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/spinner"
+                >
+
+                <Spinner
+                    android:id="@+id/brand_list_spinner_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:entries="@array/product_name_arrays"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="5dp"
+
+                    >
+
+                </Spinner>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:stretchColumns="1"
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    >
+
+                    <TextView
+                        android:text="Chk"
+                        android:id="@+id/no"
+                        android:layout_column="0"
+                        android:padding="10sp"
+                        android:gravity="left"
+                        android:textColor="@color/green"
+
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:text="Sku"
+                        android:id="@+id/product_name_aso"
+                        android:layout_column="1"
+                        android:padding="10sp"
+                        android:gravity="left"
+                        android:textColor="@color/green"
+                        android:layout_marginLeft="10dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:text="Ctn"
+                        android:id="@+id/ctn_no"
+                        android:layout_column="2"
+                        android:padding="10sp"
+                        android:gravity="left"
+                        android:textColor="@color/green"
+                        android:layout_marginRight="0dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:text="unit"
+                        android:id="@+id/product_unit"
+                        android:layout_column="3"
+                        android:padding="10sp"
+                        android:gravity="left"
+                        android:textColor="@color/green"
+                        android:layout_marginRight="0dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:text="Price"
+                        android:id="@+id/pice_number"
+                        android:layout_column="4"
+                        android:padding="10sp"
+                        android:gravity="left"
+                        android:textColor="@color/green"
+                        android:layout_marginRight="10dp"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:text="Total.P"
+                        android:id="@+id/date"
+                        android:layout_column="5"
+                        android:padding="10sp"
+                        android:gravity="left"
+                        android:textColor="@color/green"
+
+                        >
+                    </TextView>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/data_table_recyclerview_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            >
+
+            <Button
+                android:id="@+id/add_btn_dlr"
+                android:layout_width="0dp"
+                android:layout_weight=".3"
+                android:layout_height="wrap_content"
+                android:text="Add All"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Toatal Bill"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight=".2"
+
+                />
+
+            <TextView
+                android:id="@+id/total_purchase"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight=".5"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Balance"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/dealer_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rem. Balance"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/remaining_dealer_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            >
+
+            <!--<Button-->
+                <!--android:id="@+id/view_btn_dlr"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Confirm Order"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="@drawable/button"-->
+                <!--/>-->
+
+            <Button
+                android:id="@+id/send_to_server_btn_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send To Server"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button"
+                android:padding="15dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
