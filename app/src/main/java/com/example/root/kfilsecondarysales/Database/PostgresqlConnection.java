@@ -18,8 +18,8 @@ public class PostgresqlConnection {
         try{
             Class.forName("org.postgresql.Driver");
 
-            conn = DriverManager.getConnection("jdbc:postgresql://172.16.9.200:5432/ws_12nov2019", "adempiere", "adempiere");
-            //conn = DriverManager.getConnection("jdbc:postgresql://172.16.9.45:5432/sales", "postgres", "adempiere");
+            conn = DriverManager.getConnection("jdbc:postgresql://***.***.***.***:****/******", "*****", "******");
+
             System.out.println(conn);
 
         }catch(ClassNotFoundException e){
